@@ -6,12 +6,23 @@ function preload(){
 
 function setup(){
     song.play();
-    $("#wait_text").addClass("hidden");
-    console.log($("#wait_text"));
-    $("#guide_text").removeClass("hidden");
 
-    $("#loading").addClass("hidden");
-    $("#main_box").removeClass("hidden");
+    $("#wait_text").fadeIn("slow", function() {
+        $(this).addClass("hidden");
+    });
+    $("#loading").fadeIn("slow", function() {
+        $(this).addClass("hidden");
+    });
+
+    $("#main_box").fadeOut("slow", function() {
+        $(this).removeClass("hidden");
+    });
+
+    $("#guide_text").fadeOut("slow", function() {
+        $(this).removeClass("hidden");
+    });
+    
+    
     document.getElementById("defaultCanvas0").remove();
 }
 
