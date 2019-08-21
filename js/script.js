@@ -1,4 +1,16 @@
-location.reload();
+(function()
+{
+  if( window.localStorage )
+  {
+    if( !localStorage.getItem('firstLoad') )
+    {
+      localStorage['firstLoad'] = true;
+      window.location.reload();
+    }  
+    else
+      localStorage.removeItem('firstLoad');
+  }
+})();
 setTimeout(function(){
     $(document).ready(function(){
         $("#wait_text").fadeOut("slow", function() {
