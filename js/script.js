@@ -1,8 +1,10 @@
+location.reload();
 setTimeout(function(){
     $(document).ready(function(){
         $("#wait_text").fadeOut("slow", function() {
             $(this).addClass("hidden");
         });
+
         $("#loading").fadeOut("slow", function() {
             $(this).addClass("hidden");
         });
