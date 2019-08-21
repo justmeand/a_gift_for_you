@@ -5,11 +5,9 @@ function preload(){
 }
 
 function setup(){
-    $(document).ready(function(){
-        song.play();
-    })
+    song.play();
+    document.getElementById("defaultCanvas0").remove();
 }
-
 
 
 
