@@ -40,3 +40,7 @@ li {
 .box:hover .minbox li {
     opacity: 1;
 }
+
+.hidden {
+    display: none;
+}
