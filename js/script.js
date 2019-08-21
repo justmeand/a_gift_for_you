@@ -5,7 +5,7 @@
     if( !localStorage.getItem('firstLoad') )
     {
       localStorage['firstLoad'] = true;
-      window.location.reload();
+      window.location.reload(true);
     }  
     else
       localStorage.removeItem('firstLoad');
