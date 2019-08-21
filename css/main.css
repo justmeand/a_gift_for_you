@@ -28,69 +28,13 @@ li {
     background-size: 100% 100%;
     transform-style: preserve-3d;
     transform: rotateX(13deg);
-    animation: move 3s linear infinite;
+    animation: move 5s linear infinite;
 }
 
-.box:hover ol li:nth-child(1) {
-    transform: translateZ(300px);
-    transform: translateZ(300px);
-    width: 400px;
-    height: 400px;
-    opacity: 0.8;
-    left: -100px;
-    top: -100px;
+.box .minbox li {
+    opacity: 0.4;
 }
 
-.box:hover ol li:nth-child(2) {
-    transform: rotateX(180deg) translateZ(300px);
-    width: 400px;
-    height: 400px;
-    opacity: 0.8;
-    left: -100px;
-    top: -100px;
-}
-
-.box:hover ol li:nth-child(3) {
-    transform: rotateX(-90deg) translateZ(300px);
-    width: 400px;
-    height: 400px;
-    opacity: 0.8;
-    left: -100px;
-    top: -100px;
-}
-
-.box:hover ol li:nth-child(3) {
-    transform: rotateX(-90deg) translateZ(300px);
-    width: 400px;
-    height: 400px;
-    opacity: 0.8;
-    left: -100px;
-    top: -100px;
-}
-
-.box:hover ol li:nth-child(4) {
-    transform: rotateX(90deg) translateZ(300px);
-    width: 400px;
-    height: 400px;
-    opacity: 0.8;
-    left: -100px;
-    top: -100px;
-}
-
-.box:hover ol li:nth-child(5) {
-    transform: rotateY(-90deg) translateZ(300px);
-    width: 400px;
-    height: 400px;
-    opacity: 0.8;
-    left: -100px;
-    top: -100px;
-}
-
-.box:hover ol li:nth-child(6) {
-    transform: rotateY(90deg) translateZ(300px);
-    width: 400px;
-    height: 400px;
-    opacity: 0.8;
-    left: -100px;
-    top: -100px;
+.box:hover .minbox li {
+    opacity: 1;
 }
